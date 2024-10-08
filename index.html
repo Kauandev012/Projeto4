@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="./dist/styles/main.css">
 </head>
 <body>
-    <h1>test</h1>
+    <header>
+        <h1>Castelo Animado</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ipsa dolor.</p>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons-->
+            <input type="radio" name="radio-btn" id="radio1" >
+            <input type="radio" name="radio-btn" id="radio2" >
+            <input type="radio" name="radio-btn" id="radio3" >
+            <input type="radio" name="radio-btn" id="radio4" >
+            <!--radio buttons-->
+    
+            <!--imgs dos slides-->
+            <div class="slide first">
+                <img src="./src/imagens/carroseu/carrosseI_img1.jpg" alt="img1">
+            </div>
+            <div class="slide">
+                <img src="./src/imagens/carroseu/carrosseI_img2.jpg" alt="img2">
+            </div>  
+            <div class="slide">
+                <img src="./src/imagens/carroseu/carrosseI_img3.jpg" alt="img3">
+            </div>
+            <div class="slide">
+                <img src="./src/imagens/carroseu/carrosseI_img4.jpg" alt="img4">
+            </div>
+            <!--imgs dos slides-->
+        </div>
+        <!--manual navigation-->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn" ></label>
+            <label for="radio2" class="manual-btn" ></label>
+            <label for="radio3" class="manual-btn" ></label>
+            <label for="radio4" class="manual-btn" ></label>
+        </div>
+    </div>
+    <section class="hero">
+            <h1>Sinopse</h1>
+            <p>Lorem ipsum dolor sit!</p>
+    </section>
+    <script src="./src/scripts/script.js"></script>
 </body>
 </html>
