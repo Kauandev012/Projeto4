@@ -14,11 +14,16 @@ body{
 
 header{
     color: #fff;
-    padding-left: 12px;
+    padding-left: 18px;
 }
 
+.conteiner{
+    margin: 6px auto;
+    padding-top: 7px;
+    display: inline-block;
+}
 p{
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 14px;
 }
 
@@ -91,4 +96,47 @@ img{
 
 #radio4:checked ~ .first{
     margin-left: -75%;
+}
+
+#sinopse{
+    margin-top: 10px;
+    color:#fff;
+}
+
+.sinopse{
+    color:#fff;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-items:flex-start;
+}
+
+.sinopse p{
+    font-size: 18px;  
+}
+
+.sinopse img{
+    margin-right: 800px;
+    border-radius: 15%;
+}
+
+#comentarios{
+    color:#fff;
+    background-color: #549b97;
+}
+
+#comentarios img{
+    height: 150px;
+    width: 200px;
+}
+
+
+.comentario2{
+    border-bottom: solid #000000;
+}
+.comentario3{
+    border-bottom: solid #000000;
+}
+.comentario4{
+    border-bottom: solid #000000;
 }
