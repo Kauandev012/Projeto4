@@ -1,5 +1,4 @@
 @use './variaveis.scss';
-@use './hero.scss';
 
 *{
     padding: 0;
@@ -14,17 +13,22 @@ body{
 
 header{
     color: #fff;
-    padding-left: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.conteiner{
-    margin: 6px auto;
-    padding-top: 7px;
-    display: inline-block;
+.sobreOfilme{
+    font-size: 20px;
+    color: #fff;
+    padding: 9px;
+    margin-top: 100px;
 }
-p{
+
+.sobreOfilme p{
+    margin: 10px;
+    padding: 8px;
     font-size: 18px;
-    margin-top: 14px;
 }
 
 img{
@@ -36,6 +40,7 @@ img{
     width: 800px;
     height: 650px;
     overflow: hidden;
+    justify-content: center;
 }
 
 .slides{
@@ -55,7 +60,8 @@ img{
 
 .slide img{
     height: 663px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .manual-navigation{
@@ -83,7 +89,7 @@ img{
 }
 
 #radio1:checked ~ .first{
-    margin-left: 0;
+    margin-left: -0%;
 }
 
 #radio2:checked ~ .first{
@@ -101,35 +107,47 @@ img{
 #sinopse{
     margin-top: 10px;
     color:#fff;
-}
-
-.sinopse{
-    color:#fff;
-    padding: 6px;
-    display: inline-flex;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items:flex-start;
 }
 
-.sinopse p{
-    font-size: 18px;  
+.sinopse_text{
+    font-size: 20px;
+    margin-top:10px;
+    padding: 8px;
+}
+
+.sinopse_text p{
+    padding: 12px;
 }
 
 .sinopse img{
     margin-right: 800px;
     border-radius: 15%;
+    max-width: 650px;
+    width: 100%;
 }
 
 #comentarios{
     color:#fff;
-    background-color: #549b97;
+    background-color: variaveis.$bgColor2;
+    display: block;
+}
+
+#comentarios h1{
+    margin-left: 10px;
 }
 
 #comentarios img{
-    height: 150px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
 }
 
+.comentario1{
+    border-bottom: solid #000000;
+}
 
 .comentario2{
     border-bottom: solid #000000;
@@ -139,4 +157,28 @@ img{
 }
 .comentario4{
     border-bottom: solid #000000;
+}
+
+#footer-container{
+    justify-content: center;
+    color: #fff;
+    background-color: variaveis.$bgColor3;
+}
+
+#footer-container img{
+    margin-left: 20%;
+    width: 250px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#footer-container h1{
+    margin: 30px;
+    margin-left: 35%;
+}
+
+#footer-container p {
+    margin: 30px;
+    margin-left: 35%;
 }
