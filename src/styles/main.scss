@@ -183,3 +183,24 @@ img{
     margin-left: 35%;
 }
 
+@media screen and (max-width: 768px) {
+    .body{
+        display: block;
+    }
+
+    .cabeca{
+        margin-left: 20px;
+    }
+
+    .slider{
+        margin-left: 50px
+    }
+
+    #sinopse img{
+        width: 400px;
+    }
+
+    #comentarios , #footer-container{
+        max-width: 100%;
+    }
+}
